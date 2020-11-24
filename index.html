@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body style="background-image: url('https://cdn.hipwallpaper.com/i/54/60/L7ocUm.jpg')">
+
+<div style="text-align:center">
+  <h1 style="font-size:300%;font-family:comic;color:darkblue;text-align: center;">Quality of Marriage on The Pandemic of Covid19</span></h1>
+<p style="text-align: center;">&nbsp;</p>
+<p style="font-size:140%;font-family:comic;color:powderblue;text-align: center;"><span style="color: #000000;">Final Project Data Science</span></p>
+<p style="font-size:140%;font-family:comic;color:powderblue;text-align: center;"><span style="color: #000000;">Dr.Ing. Eueung Mulyana, ST., M.Sc.</span></p>
+<p style="font-size:140%;font-family:comic;color:powderblue;text-align: center;"><span style="color: #000000;">Ayu Latifah | 33220010</span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="font-size:140%;font-family:comic;text-align: center;"><span style="color: #000000;">Description</span></p>
+<p style="font-size:100%;font-family:comic;text-align: center;"><span style="color: #000000;">The data obtained is based on the results of a survey of more than 600 respondents regarding the impact of the Covid 19 virus pandemic on the quality of life in marriage. This data was taken by one of the Padjajaran University research communities in 2020.</span></p>
+
+<p style="text-align: center;">&nbsp;</p>
+
+  <p>Jumlah Responden</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://1.bp.blogspot.com/--eR6blbc2Ps/X6d48xPbNxI/AAAAAAAAAAM/pjey96_70XEpEYJZ0xrdGff_GV0yndO5ACLcBGAsYHQ/s320/quality_marriage_education_counts%2B%25281%2529.png" style="width:100%" onclick="myFunction(this);">
+  <div class="text" style="text-align:center">Based on Education </div>
+  </div>
+  <div class="column">
+    <img src="https://1.bp.blogspot.com/-NNlBQw0DlkE/X6d5SDgiU8I/AAAAAAAAAAY/k-iwgcoozpsOOsFODpP6DGkFEZ9KvVzBACLcBGAsYHQ/s320/quality_marriage_age%2Bdifference_counts.png" style="width:100%" onclick="myFunction(this);">
+  <div class="text" style="text-align:center">Based on Age of Marriage         </div>
+  </div>
+  <div class="column">
+    <img src="https://1.bp.blogspot.com/-tk4Zr4jmilw/X6d5SKLz8BI/AAAAAAAAAAU/jsSJlwmUOWYwTRheT0l41MhBTJ0jbYDIQCLcBGAsYHQ/s320/quality_marriage_age%2Bmarriage_counts.png" style="width:100%" onclick="myFunction(this);">
+  <div class="text" style="text-align:center">Based on Age Difference </div>
+  </div>
+  <div class="column">
+    <img src="https://1.bp.blogspot.com/-HeKIGS0RjFQ/X6d5S-KmBAI/AAAAAAAAAAg/flRri76GitcJ859Cdik4KbmONv0_7StTgCLcBGAsYHQ/s320/quality_marriage_result%2Beducation_counts.png" style="width:100%" onclick="myFunction(this);" data-original-height="2048" data-original-width="1365">
+  <div class="text" style="text-align:center">Result of Different Age</div>
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
